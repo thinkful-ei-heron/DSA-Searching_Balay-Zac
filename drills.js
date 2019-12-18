@@ -174,7 +174,9 @@ is 5 7 6 9 11 10 8. What is its pre-order traversal?
       console.log(tree.key);
   }
 
-  console.log(binaryTreeTest());
+//  console.log(binaryTreeTest());
+
+
   
 
 
