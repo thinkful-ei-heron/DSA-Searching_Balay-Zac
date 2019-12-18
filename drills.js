@@ -66,7 +66,7 @@ const library = [
     
  }
 
- console.log(deweyBookSearch(library, '005.2762', 'JavaScript: The Definitive Guid'))
+//  console.log(deweyBookSearch(library, '005.2762', 'JavaScript: The Definitive Guid'))
 
  
 
@@ -298,3 +298,22 @@ function maxProfit(arr) {
 //console.log(maxProfit([128, 97, 121, 123, 98, 97, 105]))
 
 
+// *8 Egg Drop
+
+function eggDrop() {
+  let f = 1;
+  while (f*(f + 1) / 2 < 100) {
+    f++;
+  }
+  let floor = f;
+  let count = 0;
+
+  while (floor <= 100) {
+    console.log(`Drop ${count + 1} at floor ${floor}`);
+    count++;
+    floor += f - count
+  }
+  if (floor > 100) console.log(`Drop ${count + 1} at floor 100`);
+}
+
+eggDrop();
